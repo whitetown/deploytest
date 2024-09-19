@@ -1,5 +1,7 @@
 #/bin/sh
 
+printenv
+
 echo "copy black files to colorful files"
 cp -f theme/black.png public/red.png
 cp -f theme/black.png public/green.png
