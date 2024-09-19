@@ -10,8 +10,8 @@ COPY package.json yarn.lock ./
 # Step 4: Install dependencies using Yarn
 RUN yarn install
 
-ARG BURKINAFASO
-RUN echo $BURKINAFASO
+ARG NEXT_PUBLIC_BURKINAFASO
+RUN echo $NEXT_PUBLIC_BURKINAFASO
 
 RUN printenv
 
