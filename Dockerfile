@@ -1,6 +1,3 @@
-ARG BURKINAFASO
-RUN echo $BURKINAFASO
-
 # Step 1: Use Node.js 20 image
 FROM node:20-alpine
 
@@ -12,6 +9,9 @@ COPY package.json yarn.lock ./
 
 # Step 4: Install dependencies using Yarn
 RUN yarn install
+
+ARG BURKINAFASO
+RUN echo $BURKINAFASO
 
 RUN printenv
 
