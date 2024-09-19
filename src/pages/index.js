@@ -11,6 +11,7 @@ export default function Home() {
             <img src='/yellow.png' className="w-20 h-20 object-fill bg-gray-400" />
 
         </div>
+        Capital of BURKINAFASO is {process.env.BURKINAFASO}
       </main>
   );
 }

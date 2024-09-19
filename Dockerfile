@@ -1,3 +1,6 @@
+ARG BURKINAFASO
+RUN echo $BURKINAFASO
+
 # Step 1: Use Node.js 20 image
 FROM node:20-alpine
 
