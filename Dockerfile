@@ -10,6 +10,8 @@ COPY package.json yarn.lock ./
 # Step 4: Install dependencies using Yarn
 RUN yarn install
 
+RUN printenv
+
 # Step 5: Copy the rest of the application code
 COPY . .
 
