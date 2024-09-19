@@ -13,11 +13,14 @@ RUN yarn install
 # Step 5: Copy the rest of the application code
 COPY . .
 
-# Step 6: Build the Next.js app
+# Step 6: Branding
+RUN ./theme.sh
+
+# Step 7: Build the Next.js app
 RUN yarn build
 
-# Step 7: Expose the port Next.js runs on
+# Step 8: Expose the port Next.js runs on
 EXPOSE 3000
 
-# Step 8: Start the Next.js app
+# Step 9: Start the Next.js app
 CMD ["yarn", "start"]
