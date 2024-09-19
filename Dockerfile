@@ -20,7 +20,7 @@ RUN ./theme.sh
 RUN yarn build
 
 # Step 8: Expose the port Next.js runs on
-EXPOSE 3000
+# EXPOSE 3000
 
 # Step 9: Start the Next.js app
-CMD ["yarn", "start"]
+# CMD ["yarn", "start"]
